@@ -1,4 +1,4 @@
-function inOrder (input) {
+const inOrder = input => {
     let cleanString = input.replace(/[0-9]/g, '');
     cleanString = cleanString.replace(/[^\w\s]|_/g, "")
         .replace(/\s+/g, " ");

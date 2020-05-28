@@ -1,4 +1,4 @@
-function problemThree(input, createOutput) {
+const problemThree = (input, createOutput) => {
     return createOutput(input);
 }
 

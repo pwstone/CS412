@@ -1,4 +1,4 @@
-function findOperator(input) {
+const findOperator = input => {
     const stringArray = input.split('');
     const left = Number(stringArray[0]);
     const operator = stringArray[1];
