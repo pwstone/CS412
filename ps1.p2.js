@@ -1,8 +1,15 @@
 const findOperator = input => {
+    if(typeof(input) != typeof('')) {
+        return () => console.log('Invalid Input');
+    }
+    const operatorCheck = ['+', '-', '*', '%', '/'];
     const stringArray = input.split('');
     const left = parseInt(stringArray[0]);
     const operator = stringArray[1];
     const right = parseInt(stringArray[2]);
+    if(operatorCheck.indexOf(operator) < 0) {
+        return () => console.log('Invalid Input');
+    }
     switch(operator) {
         case '+':
             return () => left + right;

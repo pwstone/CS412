@@ -36,15 +36,15 @@ describe('Testing part 2', () => {
     });
 
     // test 2
-    it('should return 0', function () {
-        let ps2test1 = findOperator('9%3')();
-        expect(ps2test1).to.be.equal(0);
+    it('should return error message and undefined function', function () {
+        let ps2test1 = findOperator('9,3')();
+        expect(ps2test1).to.be.equal(undefined);
     });
 
     // test 3
-    it('should return 10', function () {
-        let ps2test1 = findOperator('8+2')();
-        expect(ps2test1).to.be.equal(10);
+    it('should return error message and undefined function', function () {
+        let ps2test1 = findOperator(2*3)();
+        expect(ps2test1).to.be.equal(undefined);
     });
 })
 
