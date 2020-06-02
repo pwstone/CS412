@@ -3,6 +3,6 @@ const cube = (input) => {
     return input ** 3;
 }
 
-arrayInput = [1,2,3,4,5,6,7];
+const arrayInput = [1,2,3,4,5,6,7];
 console.log(arrayInput.map(cube));
 
