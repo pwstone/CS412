@@ -6,6 +6,6 @@ function* wordPrint(str) {
 }
 
 let word = wordPrint('All I know is something like a bird within her sang');
-for(i = word.next().value; i != undefined; i = word.next().value) {
+for(let i = word.next().value; i != undefined; i = word.next().value) {
     console.log(i);
 }
