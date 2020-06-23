@@ -1,12 +1,14 @@
 <div name="outerList">
   <ul *ngFor="let article of articles">
 
-    <li (click)="showDescription(article.title)">Title: {{article.title}}</li>
+    <li>Title: {{article.title}}
+      <button (click)="showDescription(article.title)"> View Description</button>
+    </li>
 
   </ul>
 </div>
 
 <div name="details" *ngIf="selectedArticle">
-  <input name="lastName" type="text" value="{{selectedArticle.description}}" style="width: 1000px">
+  <p>description: {{selectedArticle.description}}</p>
 
 </div>
